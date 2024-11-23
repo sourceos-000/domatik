@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Menu Domatik - Domino Matemika</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/carousel.css">
+    <style>
+        /* body {
+      background-image: url(assets/gambar/bg-materi1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+    } */
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: solid rgba(0, 0, 0, 0.15);
+            border-width: 1px 0;
+            box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+                inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -0.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+            /* Ukuran font bisa disesuaikan */
+        }
+
+        .fraction>.top {
+            border-bottom: 2px solid #000;
+            /* Garis horizontal */
+            display: block;
+            margin-bottom: 2px;
+            /* Jarak antara angka atas dan garis */
+        }
+
+        .fraction>.bottom {
+            display: block;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="features.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary rounded " aria-label="Thirteenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+          aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <div class="d-lg-flex col-lg justify-content-lg-end fixed-bottom p-3 mx-5">
+
+            <i class="bi bi-arrow-right-circle-fill text-primary" style="font-size: 3em;"><a href="#"></a></i>
+          </div>
+          <div class="d-lg-flex col-lg justify-content-lg-start fixed-top p-3 mx-5">
+            <i class="bi bi-x-circle-fill text-white" style="font-size: 3em;"></i>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+        <div id="myCarousel" class="carousel slide mb-6" data-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"
+                    style="height: 800px; background-image: url(assets/gambar/bg-materi1.png); background-size: 100%; background-position: center;">
+                    <div class="container">
+                        <div style="margin-top: 20%; transform: rotate(5deg);">
+                            <h1 class="text-center text-primary" style=" font-size: 6em;">APA ITU<br>PECAHAN?</h1>
+                        </div>
+                        <div class="d-flex justify-content-center" style="margin-top: 23%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi1.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="height: 800px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu2.svg" alt="" style="width: 270px;">
+                                <div style="position: absolute; top: 15%; left: 25%;">
+                                    <h2 class="text-cream pb-2">Pecahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi2.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="fs-4 mt-3">Pecahan dapat diartikan sebagai bagian dari sesuatu yang utuh. Sebuah
+                                pecahan mempunyai 2 bagian yaitu pembilang dan penyebut.
+                            </p>
+                            <p class="fs-4">Dapat dituliskan dalam bentuk a/b, dengan (a) disebut
+                                sebagai pembilang dan (b) sebagai penyebut.</p>
+                            <img src="assets/gambar/pecahan/pecahan1.svg" alt="" srcset="" width="1000px">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="height: 800px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu2.svg" alt="" style="width: 270px;">
+                                <div style="position: absolute; top: 15%; left: 25%;">
+                                    <h2 class="text-cream pb-2">Pecahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi3.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="fs-4 mt-3">Ilustrasi: <br>
+                                Pecahan biasa dapat digunakan untuk menyatakan bagian dari keseluruhan (1 utuh).
+                                Beberapa contoh kehidupan sehari-hari yang menggambarkan tentang pecahan.
+                            </p>
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="assets/gambar/pecahan/pecahan2.svg" alt="" srcset="">
+                            </div>
+                            <p class="fs-4 text-wrap    ">Ibu memiliki memiliki 1 loyang pizza utuh yang terlihat pada
+                                gambar (a), kemudian ibu memotong pizza menjadi 2 bagian yang sama terlihat pada gambar
+                                (b). Kemudian Yohanna mengambil 1 bagian dan memakannya. Nah, 1 bagian pizza dari
+                                keseluruhan jumlah pizza, yaitu 2. Jika dinyatakan dalam bentuk pecahan, dituliskan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Penjumlahan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi4.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <ol class="mt-3">
+                                <li class="fs-4 ">Penjumlahan pecahan dengan penyebut sama <br>
+                                    Artinya menambahkan angka pembilang saja, tanpa menambah bilangan penyebut. Jadi,
+                                    bilangan yang berubah pada hasil akhirnya hanyalah angka pembilang <br>
+                                    <img class="my-3" src="assets/gambar/pecahan/pecahan3a.svg" alt="">
+                                </li>
+                                <li class="fs-4">Penjumlahan pecahan dengan penyebut sama <br>
+                                    Artinya menambahkan angka pembilang saja, tanpa menambah bilangan penyebut. Jadi,
+                                    bilangan yang berubah pada hasil akhirnya hanyalah angka pembilang <br>
+                                    <img class="my-3" src="assets/gambar/pecahan/pecahan3b.svg" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2">Pengurangan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi5.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <ol class="mt-3">
+                                <li class="fs-4">Pengurangan pecahan dengan penyebut sama <br>
+                                    Artinya pengurangan ini memiliki bilangan yang sama di bagian bawahnya. Untuk
+                                    menyelesaikan operasi ini, cukup kurangi pembilangnya tanpa harus mengubah
+                                    penyebutnya. <br>
+                                    <img class="my-3" src="assets/gambar/pecahan/pecahan4a.svg" alt="">
+                                </li>
+                                <li class="fs-4">Pengurangan pecahan dengan penyebut berbeda <br>
+                                    Artinya pengurangan pecahan dengan penyebut yang berbeda adalah proses mengurangi
+                                    dua pecahan yang memiliki penyebut yang berbeda. Sama seperti penjumlahan pecahan
+                                    dengan penyebut yang berbeda, kita perlu menyamakan penyebut terlebih dahulu sebelum
+                                    melakukan pengurangan. <br>
+                                    <img class="my-3" src="assets/gambar/pecahan/pecahan4b.svg" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-bottom my-5">
+                <button class="carousel-control-prev " type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="d-lg-flex col-lg justify-content-lg-start fixed-top m-5" ;">
+                <a class="link-light" href="materi.html" style="margin-left: 32px"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                    </svg></a>
+            </div>
+        </div>
+        <!-- Menu-->
+        <!-- <div class="container px-4 py-2 mt-5 fs-4 " style="height: 820px;">
+        
+        <div class="d-flex justify-content-center" style="margin-top: 35vh;">
+            <h1 class="text-center" style=" font-size: 4em;">APA ITU<br>PECAHAN?</h1>
+        </div>
+    </div> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+        // Fungsi untuk mendapatkan parameter dari URL
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Mengatur carousel ke slide yang ditentukan
+        document.addEventListener("DOMContentLoaded", function () {
+            const slideIndex = getQueryParameter('slide');
+            if (slideIndex) {
+                const carousel = new bootstrap.Carousel(document.getElementById('myCarousel'));
+                carousel.to(parseInt(slideIndex)); // Mengatur carousel ke slide yang ditentukan
+            }
+        });
+    </script>
+</body>
+
+</html>

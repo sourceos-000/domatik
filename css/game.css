@@ -1,0 +1,58 @@
+/* element img yang ada di class pemain 1 */
+.kartu img {
+  margin: 7px;
+  width: 70px;
+}
+
+.mulai {
+  width: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center perfectly */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* elemt img yang ada di html yang dibuat dari javascrip */
+/* img {
+  width: 100px;
+  height: 70px;
+} */
+
+.papan {
+  height: 450px;
+  background-image: url("../assets/gambar/papan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* modal menang */
+#menang {
+  display: none;
+  width: 350px;
+  height: 180px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center perfectly */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+
+/* button main */
+.mainAhh {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: blueviolet;
+  position: fixed;
+  top: 300px;
+  left: 400px;
+  color: black;
+  font-size: 20px;
+}
