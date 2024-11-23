@@ -220,7 +220,6 @@ mulai.addEventListener("click", function () {
         menang();
         return;
       } else {
-        alert("Kamu memasukkan kartu yang salah");
         salah.play();
       }
       // cek kedua, nilai kartu kiri di papan dengan kartu kanan pemain
