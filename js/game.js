@@ -107,14 +107,11 @@ mulai.addEventListener("click", function () {
   // function pilih kartu
   function pilihKartu(e) {
     kartuPilihanPemain = e.target.id;
-    console.log(kartuPilihanPemain);
-    console.log(xKanan.length);
   }
 
   // function dragOver
   function dragOver(e) {
     e.preventDefault();
-    console.log(e.offsetX);
   }
 
   // bantuan untuk pengali sumbu x dan y
@@ -149,6 +146,7 @@ mulai.addEventListener("click", function () {
     rotasiKartu(gambarPertama, sumbuX, sumbuY + 150, lebar, tinggi, 0);
   };
 
+  const modalSalah = document.getElementById("salah");
   //function drop, atau jika kartu yang berada di atas papan dilepas
   function lemparKartu(e) {
     const gambar = dataKartu[kartuPilihanPemain].info;
@@ -220,12 +218,18 @@ mulai.addEventListener("click", function () {
         menang();
         return;
       } else {
+        modalSalah.style.display = "block";
+        modalSalah.children[0].innerHTML = "Kamu memasukkan kartu yang salah!";
         salah.play();
+        modalSalah.addEventListener("click", function () {
+          modalSalah.style.display = "none";
+        })
       }
       // cek kedua, nilai kartu kiri di papan dengan kartu kanan pemain
     }
   }
 
+  
   // bagian ke-tiga
   //button html
   const btnP4 = document.querySelector("#btnP4");
