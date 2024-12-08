@@ -131,6 +131,12 @@
         .fraction>.bottom {
             display: block;
         }
+
+        .bg-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="features.css" rel="stylesheet" />
@@ -156,18 +162,41 @@
         </div>
       </div>
     </nav> -->
+
         <div id="myCarousel" class="carousel slide mb-6" data-interval="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                    aria-current="true" aria-label="Slide 1"></button> <!-- Apa itu pecahan -->
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <!-- pecahan1 -->
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- pecahan2 -->
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <!-- pecahan3 -->
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <!-- penjumlahan1 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <!-- penjumlahan2 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <!-- penjumlahan3 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <!-- pengurangan1 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <!-- pengurangan2 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <!-- pengurangan3 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <!-- pengurangan4 -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                <!-- perbedaan -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                <!-- soal -->
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                <!-- sumber -->
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active"
-                    style="height: 800px; background-image: url(assets/gambar/bg-materi1.png); background-size: 100%; background-position: center;">
+                <div class="bg-img carousel-item active"
+                    style="height: 800px; background-image: url(assets/gambar/bg-materi1.png);">
                     <div class="container">
                         <div style="margin-top: 20%; transform: rotate(5deg);">
                             <h1 class="text-center text-primary" style=" font-size: 6em;">APA ITU<br>PECAHAN?</h1>
@@ -180,8 +209,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="height: 800px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
 
                     <div class="container px-4 py-2 mt-4">
                         <div class="menuText d-flex justify-content-center mb-3">
@@ -192,22 +221,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
                             <audio controls id="background-audio">
                                 <source src="assets/audio/materi2.m4a" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <p class="fs-4 mt-3">Pecahan dapat diartikan sebagai bagian dari sesuatu yang utuh. Sebuah
-                                pecahan mempunyai 2 bagian yaitu <span class="text-danger">pembilang</span> dan <span class="text-danger">penyebut</span>
+                                pecahan mempunyai 2 bagian yaitu <span class="text-danger">pembilang</span> dan <span
+                                    class="text-danger">penyebut</span>
                             </p>
-                            <p class="fs-4">Dapat dituliskan dalam bentuk <img src="assets/gambar/pecahan/pecahanab.png" alt="" style="display: inline-block;">, dengan (a) disebut
-                                sebagai pembilang dan (b) sebagai penyebut.</p>
+                            <p class="fs-4">Dapat dituliskan dalam bentuk <img src="assets/gambar/pecahan/pecahanab.png"
+                                    alt="" style="display: inline-block;">, dengan (a) disebut
+                                sebagai pembilang yaitu menunjukkan berapa banyak bagian yang diambil dari jumlah
+                                keseluruhan dan (b) sebagai penyebut yaitu jumlah bagian dari keseluruhan.</p>
                             <img src="assets/gambar/pecahan/pecahan1.svg" alt="" srcset="" width="1000px">
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
 
                     <div class="container px-4 py-2 mt-4">
                         <div class="menuText d-flex justify-content-center mb-3">
@@ -218,13 +250,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
                             <audio controls id="background-audio">
                                 <source src="assets/audio/materi3.m4a" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
                             <p class="fs-4 mt-3">Ilustrasi: <br>
-                                Pecahan biasa dapat digunakan untuk menyatakan bagian dari keseluruhan <br> (1 utuh).
+                                Pecahan biasa dapat digunakan untuk menyatakan bagian dari keseluruhan (1 utuh).<br>
                                 Beberapa contoh kehidupan sehari-hari yang menggambarkan tentang pecahan.
                             </p>
                             <div class="d-flex justify-content-center mb-4">
@@ -232,14 +264,35 @@
                             </div>
                             <p class="fs-4 text-wrap    ">Ibu memiliki memiliki 1 loyang pizza utuh yang terlihat pada
                                 gambar (a), kemudian ibu memotong pizza menjadi 2 bagian yang sama terlihat pada gambar
-                                (b). Kemudian Yohanna mengambil 1 bagian dan memakannya. Nah, 1 bagian pizza dari
-                                keseluruhan jumlah pizza, yaitu 2. Jika dinyatakan dalam bentuk pecahan, dituliskan <img src="assets/gambar/pecahan/pecahan12.png" alt="">.
+                                (b), kemudian Yohanna mengambil 1 bagian dan memakannya terlihat pada gambar (c). <br>
+                                Nah, 1 bagian pizza dari keseluruhan jumlah pizza, yaitu 2. Jika dinyatakan dalam bentuk
+                                pecahan, dituliskan <img src="assets/gambar/pecahan/pecahan12.png" alt="">.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu2.svg" alt="" style="width: 270px;">
+                                <div style="position: absolute; top: 15%; left: 25%;">
+                                    <h2 class="text-cream pb-2">Pecahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <p class="fs-4 mb-3">Tebaklah pecahan pada gambar berikut!</p>
+                            <div class="d-flex justify-content-center mb-4">
+                                <img width="90%" src="assets/gambar/pecahan/soalpecahan.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-img carousel-item"
+                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png);">
 
                     <div class="container px-4 py-2 mt-4">
                         <div class="menuText d-flex justify-content-center mb-3">
@@ -250,58 +303,240 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
-                            <audio controls id="background-audio">
-                                <source src="assets/audio/materi4.m4a" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
                             <ol class="mt-3">
                                 <li class="fs-4 ">Penjumlahan pecahan dengan penyebut sama <br>
                                     Artinya menambahkan angka pembilang saja, tanpa menambah bilangan penyebut. Jadi,
                                     bilangan yang berubah pada hasil akhirnya hanyalah angka pembilang <br>
-                                    <img class="my-3" src="assets/gambar/pecahan/pecahan3a.svg" alt="">
-                                </li>
-                                <li class="fs-4">Penjumlahan pecahan dengan penyebut sama <br>
-                                    Artinya menambahkan angka pembilang saja, tanpa menambah bilangan penyebut. Jadi,
-                                    bilangan yang berubah pada hasil akhirnya hanyalah angka pembilang <br>
-                                    <img class="my-3" src="assets/gambar/pecahan/pecahan3b.svg" alt="">
+                                    <img width="90%" class="my-3" src="assets/gambar/pecahan/penjumlahan1.svg" alt="">
                                 </li>
                             </ol>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="height: 850px; background-image: url(assets/gambar/bg-materi2.png); background-size: 100%;">
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
 
                     <div class="container px-4 py-2 mt-4">
                         <div class="menuText d-flex justify-content-center mb-3">
                             <div style="position: relative;">
                                 <img src="assets/gambar/menu/menu3.svg" alt="">
                                 <div style="position: absolute; top: 20%; left: 20%;">
-                                    <h2 class="text-cream pb-2">Pengurangan Pecahan Sederhana</h2>
+                                    <h2 class="text-cream pb-2"> Penjumlahan Pecahan Sederhana</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <ol class="mt-3">
+                                <li class="fs-4 ">Penjumlahan pecahan dengan penyebut berbeda <br>
+                                    Artinya proses menjumlahkan dua pecahan yang memiliki penyebut yang tidak sama.
+                                    Untuk melakukan penjumlahan pecahan dengan penyebut yang berbeda, kita perlu
+                                    menyamakan penyebut terlebih dahulu, kemudian baru menjumlahkan pembilangnya. Ubah
+                                    penyebut setiap pecahan dengan menggunakan Kelipatan Persekutuan Terkecil (KPK).
+                                    <br><br> Contoh:<br>
+                                    <img width="90%" class="my-3" src="assets/gambar/pecahan/penjumlahan2.svg" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Penjumlahan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
                             <audio controls id="background-audio">
-                                <source src="assets/audio/materi5.m4a" type="audio/mpeg">
+                                <source src="assets/audio/materi4.m4a" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
+                            <p class="fs-4 mb-3">Contoh :</p>
+                            <img width="90%" class="my-3" src="assets/gambar/pecahan/penjumlahan3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Pengurangan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
                             <ol class="mt-3">
-                                <li class="fs-4">Pengurangan pecahan dengan penyebut sama <br>
+                                <li class="fs-4 ">Pengurangan pecahan dengan penyebut sama<br>
                                     Artinya pengurangan ini memiliki bilangan yang sama di bagian bawahnya. Untuk
                                     menyelesaikan operasi ini, cukup kurangi pembilangnya tanpa harus mengubah
-                                    penyebutnya. <br>
-                                    <img class="my-3" src="assets/gambar/pecahan/pecahan4a.svg" alt="">
+                                    penyebutnya.
+
+                                    <br><br> Contoh:<br>
+                                    <img width="90%" class="my-3" src="assets/gambar/pecahan/pengurangan1.svg" alt="">
                                 </li>
-                                <li class="fs-4">Pengurangan pecahan dengan penyebut berbeda <br>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Pengurangan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <ol class="mt-3">
+                                <li class="fs-4 ">Pengurangan pecahan dengan penyebut berbeda<br>
                                     Artinya pengurangan pecahan dengan penyebut yang berbeda adalah proses mengurangi
                                     dua pecahan yang memiliki penyebut yang berbeda. Sama seperti penjumlahan pecahan
                                     dengan penyebut yang berbeda, kita perlu menyamakan penyebut terlebih dahulu sebelum
-                                    melakukan pengurangan. <br>
-                                    <img class="my-3" src="assets/gambar/pecahan/pecahan4b.svg" alt="">
+                                    melakukan pengurangan.
+                                    <br><br> Contoh:<br>
+                                    <img width="90%" class="my-3" src="assets/gambar/pecahan/pengurangan2.svg" alt="">
                                 </li>
                             </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Pengurangan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <audio controls id="background-audio">
+                                <source src="assets/audio/materi4.m4a" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="fs-4 mb-3">Contoh :</p>
+                            <img width="90%" class="my-3" src="assets/gambar/pecahan/pengurangan3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 20%;">
+                                    <h2 class="text-cream pb-2"> Pengurangan Pecahan Sederhana</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <ol class="mt-3">
+                                <li class="fs-4 ">
+                                    <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan1.svg" alt="">
+                                </li>
+                                <li class="fs-4 ">
+                                    <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan2.svg" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 800px; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 8%;">
+                                    <h2 class="text-cream pb-2">Perbedaan Penjumlahan & Pengurangan Pecahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <p class="fs-4 mb-3">Penjumlahan dan pengurangan pecahan memiliki prinsip dasar yang serupa,
+                                namun ada perbedaan penting dalam cara melakukannya yaitu:
+                            </p>
+                            <ul class="mt-3">
+                                <li class="fs-4 ">
+                                    Penjumlahan: Penjumlahan pecahan cenderung menghasilkan jumlah yang lebih besar
+                                    karena pembilangnya ditambah setelah penyebut disamakan.
+                                </li>
+                                <li class="fs-4 ">
+                                    Pengurangan: Pengurangan pecahan bisa memberi hasil lebih keci dikarenakan
+                                    mengurangi pembilang setelah menyamakan penyebut.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 100%; background-image: url(assets/gambar/bg-materi2.png);">
+
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 20%; left: 32%;">
+                                    <h2 class="text-cream pb-2">Soal Cerita Pecahan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content bg-white rounded-4 my-5 p-5" style=" opacity: 90%;">
+                            <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan1.svg" alt="">
+                            <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-img carousel-item"
+                    style="height: 900px; background-image: url(assets/gambar/bg-materi2.png);">
+                    <div class="container px-4 py-2 mt-4">
+                        <div class="menuText d-flex justify-content-center mb-3">
+                            <div style="position: relative;">
+                                <img src="assets/gambar/menu/menu3.svg" alt="">
+                                <div style="position: absolute; top: 18%; left: 38%;">
+                                    <h2 class="text-cream pb-2">Sumber Materi</h2>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content bg-white rounded-4 my-5 p-5" style="opacity: 90%; height: 400px;">
+                            <ul class="mt-3">
+                                <li class="fs-4 ">
+                                    Tim Gakko Tosho. (2021). Buku panduan guru matematika untuk sekolah dasar vol 2
+                                    kelas V SD. Kemendikbudristek.
+                                </li>
+                                <li class="fs-4 ">
+                                    Fitrianawati, M., Surtiani, I., Istiandaru, A. (2O22). Matematika SD/MI kelas V.
+                                    Kemdikbudristek.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -316,7 +551,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div class="d-lg-flex col-lg justify-content-lg-start fixed-top m-5" ;">
+            <div class="d-lg-flex col-lg justify-content-lg-start fixed-top m-5">
                 <a class="link-light" href="materi.html" style="margin-left: 32px"><svg
                         xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="bi bi-x-circle-fill" viewBox="0 0 16 16">
