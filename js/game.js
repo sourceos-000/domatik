@@ -47,7 +47,7 @@ mulai.addEventListener("click", function () {
   for (let i = 0; i < 12; i++) {
     const kartu = document.createElement("img");
 
-    kartu.setAttribute("src", `assets/gambar/kartu/${i}.png`);
+    kartu.setAttribute("src", `assets/gambar/kartu/${i}.svg`);
     kartu.setAttribute("id", "kartu" + i);
     kartu.setAttribute("draggable", "true");
     kartu.addEventListener("drag", pilihKartu);
@@ -141,7 +141,7 @@ mulai.addEventListener("click", function () {
 
   // Menampilkan kartu pertama di canvas
   const gambarPertama = new Image();
-  gambarPertama.src = `assets/gambar/kartu/0.png`; // Pastikan path dan file tepat
+  gambarPertama.src = `assets/gambar/kartu/0.svg`; // Pastikan path dan file tepat
   gambarPertama.onload = function () {
     rotasiKartu(gambarPertama, sumbuX, sumbuY + 150, lebar, tinggi, 0);
   };
