@@ -117,6 +117,15 @@
       width: 150px;
       margin-top: -20px;
     }
+
+    p {
+      text-align: justify;
+      /* Meratakan teks kanan-kiri */
+      text-indent: 2em;
+      /* Memberikan indentasi pada baris pertama */
+      margin-bottom: 0.2em;
+      /* Menambahkan jarak antar paragraf (opsional) */
+    }
   </style>
   <!-- Custom styles for this template -->
   <link href="features.css" rel="stylesheet" />
@@ -146,47 +155,34 @@
 
     <!-- Menu-->
     <div class="container px-4 py-2 mt-4" id="custom-cards">
-      <div class="menuText d-flex justify-content-center mb-3">
+      <div class="menuText d-flex justify-content-center mb-5">
         <div style="position: relative;">
           <img src="assets/gambar/menu/menu.svg" alt="" style="width: 270px;">
           <div style="position: absolute; top: 20%; left: 10%;">
             <h2 class="text-cream pb-2">Pendahuluan</h2>
           </div>
         </div>
+        <div style="position: relative;">
+          <div style="position: absolute; top: 0; left: 20px; z-index: 1;">
+            <img src="assets/gambar/k-pendahuluan.svg" alt="" style="width: 180px;">
+          </div>
+        </div>
       </div>
-      <div class="content bg-white rounded-4 my-4 p-5" style=" opacity: 90%;">
-        <h2 class="mb-4">Selamat Datang di Kartu Domatik!</h2>
-        <div class="js-text fs-4">Situs ini dirancang khusus untuk
+      <div class="content bg-white rounded-4 my-3 p-4" style=" opacity: 90%;">
+        <h2 class="mb-5">Selamat Datang di Kartu Domatik!</h2>
+        <p class=" fs-4">Situs ini dirancang khusus untuk
           membantu teman-teman untuk
           mempelajari penjumlahan dan pengurangan pecahan dengan cara yang interaktif dan menyenangkan. Di sini
-          teman-teman akan menemukan penjelasan tentang penjumlahan dan pengurangan pecahan. </div>
-        <div class="js-text fs-4">Selain materi, situs ini juga
+          teman-teman akan menemukan penjelasan tentang penjumlahan dan pengurangan pecahan. </p>
+        <p class=" fs-4">Selain materi, situs ini juga
           menyediakan game kartu domino matematika yang dirancang untuk
           memperkuat pemahaman tentang operasi penjumlahan dan pengurangan pecahan. Dalam game ini, siswa akan
-          menghubungkan kartu yang berisi soal dan jawaban pecahan dengan cara yang seru dan menantang.</div>
+          menghubungkan kartu yang berisi soal dan jawaban pecahan dengan cara yang seru dan menantang.</p>
       </div>
 
     </div>
   </main>
-  <!-- Footer-->
-  <!-- <footer class="bg-white py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Your Website 2023</div>
-          </div>
-          <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
-            <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
-          </div>
-        </div>
-      </div>
-    </footer> -->
+
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
