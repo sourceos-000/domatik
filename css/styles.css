@@ -170,6 +170,9 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.js-text {
   text-align: justify;
   text-justify: inter-word;
 }
