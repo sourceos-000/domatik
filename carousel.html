@@ -137,6 +137,30 @@
             background-size: cover;
             background-position: center;
         }
+        .custom-list {
+            list-style: none; /* Menghapus bullet default */
+            counter-reset: list-counter; /* Reset angka counter */
+            padding: 0;
+        }
+
+        .custom-list li {
+            counter-increment: list-counter; /* Menambah angka counter */
+            display: flex;
+            align-items: flex-start; /* Menyelaraskan angka dengan bagian atas gambar */
+            margin-bottom: 20px;
+        }
+
+        .custom-list li::before {
+            content: counter(list-counter) "."; /* Menampilkan angka */
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 10px; /* Jarak antara angka dan gambar */
+            line-height: 1; /* Pastikan angka tidak menjorok ke bawah */
+        }
+
+        .image-container {
+            flex: 1; /* Gambar mengambil sisa ruang yang tersedia */
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="features.css" rel="stylesheet" />
@@ -529,12 +553,18 @@
                                 <source src="assets/audio/Soal cerita pecahan.m4a" type="audio/mpeg">
                                 Your browser does not support the audio element.
                             </audio>
-                            <ol class="mt-3">
+                            <ol class="custom-list mt-3">
                                 <li class="fs-4 ">
-                                    <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan1.svg" alt="">
+                                    <div class="image-container">
+                                        <img width="100%"  src="assets/gambar/pecahan/soalpecahan1.svg"
+                                            alt="">
+                                    </div>
                                 </li>
                                 <li class="fs-4 ">
-                                    <img width="100%" class="my-3" src="assets/gambar/pecahan/soalpecahan2.svg" alt="">
+                                    <div class="image-container">
+                                        <img width="100%"  src="assets/gambar/pecahan/soalpecahan2.svg"
+                                            alt="">
+                                    </div>
                                 </li>
                             </ol>
                         </div>
